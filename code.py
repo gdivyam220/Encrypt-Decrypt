@@ -7,10 +7,12 @@ rt = Tk()
 def change(s):
     ans=""
     for i in range(0,len(s)):
-        if(ord(s[i])<=90):
+        if(ord(s[i])<=90 and ord(s[i])>64):
             ans = ans + chr(92-(ord(s[i])-63))
-        else:
+        elif(ord(s[i])>96 and ord(s[i])<123):
             ans = ans + chr(123-(ord(s[i])-96))
+	else:
+		ans = ans + s[i]
     return ans	
 
 # Method to fetch from "plain text" field and
