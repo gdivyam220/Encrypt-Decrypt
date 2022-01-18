@@ -11,8 +11,8 @@ def change(s):
             ans = ans + chr(92-(ord(s[i])-63))
         elif(ord(s[i])>96 and ord(s[i])<123):
             ans = ans + chr(123-(ord(s[i])-96))
-	else:
-		ans = ans + s[i]
+        else:
+            ans = ans + s[i]
     return ans	
 
 # Method to fetch from "plain text" field and
